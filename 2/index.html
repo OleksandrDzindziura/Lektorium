@@ -6,6 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
   <title>Login form</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
       <div class="form">
         <h2>Sign in to your account</h2>
 
-
+        <form id="signin">
         <div id="form" class="form-element">
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter email" onkeydown="validationEmail()">
+          <input type="text" id="email" name="email" placeholder="Enter email" >
           <span id="text"></span>
         </div>
 
@@ -32,7 +33,7 @@
             <label for="password">Password</label>
           </div>
           <label class="pass" for="password"><a href="http://www.google.com" target="_blank">Forgot you password?</a></label>
-          <input type="password" id="password" placeholder="Enter password" onkeydown="validationPass()">
+          <input type="password" name="password" id="password" placeholder="Enter password">
           <span id="textPass"></span>
         </div>
 
@@ -41,12 +42,13 @@
 
 
         <div class="form-element">
-          <input type="checkbox" id="remember-me">
+          <input type="checkbox" id="remember-me">    
           <label for="remember-me">Stay signed in for a week</label>
         </div>
         <div class="form-element">
-          <button>Continue</button>
+          <button type="submit">Continue</button>
         </div>
+      </form>
         <div class="form-element stay-signed">
           <a href="https://www.google.com/maps/search/ekreative+%D0%BB%D1%8C%D0%B2%D1%96%D0%B2/@49.810143,24.0233706,13.75z" target="_blank">Use single sign-on (Google) instead</a>
         </div>
@@ -54,6 +56,5 @@
     <div class="sign">Don't have an account?<a href="https://www.facebook.com/"> Sign up</a> </div>
   </div>
 </div>
-<script src="main.js"></script>
 </body>
 </html>

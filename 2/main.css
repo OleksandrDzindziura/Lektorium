@@ -95,6 +95,10 @@ body {
 
     border-radius:5px;
 }
+.popup .form .form-element.invalid input[type="text"],
+.popup .form .form-element.invalid input[type="password"]   {
+    border-color: rgb(255, 0, 0);
+ }
 .popup .form .form-element input[type="checkbox"] {
     margin-right:5px;
     cursor:pointer;
